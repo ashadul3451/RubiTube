@@ -21,7 +21,7 @@ function addComment() {
 const followBtn = document.querySelector(".follow-btn");
 
 followBtn.addEventListener("click", () => {
-  if (followBtn.innerHTML.includes("Follow")) {
+  if (followBtn.innerHTML === "👤<br>Follow") {
     followBtn.innerHTML = "👤<br>Following";
   } else {
     followBtn.innerHTML = "👤<br>Follow";
