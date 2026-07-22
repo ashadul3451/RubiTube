@@ -18,3 +18,12 @@ function addComment() {
     input.value = "";
   }
 }
+const followBtn = document.querySelector(".follow-btn");
+
+followBtn.addEventListener("click", () => {
+  if (followBtn.innerHTML.includes("Follow")) {
+    followBtn.innerHTML = "👤<br>Following";
+  } else {
+    followBtn.innerHTML = "👤<br>Follow";
+  }
+});
