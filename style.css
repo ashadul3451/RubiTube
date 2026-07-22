@@ -36,3 +36,13 @@ left:10px;
 bottom:30px;
 color:white;
 }
+.comment-box{
+position:absolute;
+left:10px;
+bottom:100px;
+color:white;
+}
+
+.comment-box input{
+padding:5px;
+}
