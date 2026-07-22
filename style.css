@@ -39,8 +39,14 @@ color:white;
 .comment-box{
 position:absolute;
 left:10px;
-bottom1:120px;
+bottom:180px;
+z-index:999;
 color:white;
+}
+
+.comment-box input{
+padding:8px;
+width:180px;
 }
 
 .comment-box input{
