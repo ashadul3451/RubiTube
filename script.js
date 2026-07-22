@@ -33,3 +33,23 @@ shareBtn.addEventListener("click", () => {
   navigator.clipboard.writeText(window.location.href);
   alert("RubiTube link copied!");
 });
+const videos = [
+  "video.mp4",
+  "video2.mp4",
+  "video3.mp4"
+];
+
+let currentVideo = 0;
+
+function nextVideo() {
+  currentVideo++;
+
+  if (currentVideo >= videos.length) {
+    currentVideo = 0;
+  }
+
+  const video = document.getElementById("videoPlayer");
+  video.src = videos[currentVideo];
+  video.load();
+  video.play();
+}
