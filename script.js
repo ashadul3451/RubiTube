@@ -27,3 +27,9 @@ followBtn.addEventListener("click", () => {
     followBtn.innerHTML = "👤<br>Follow";
   }
 });
+const shareBtn = document.querySelector(".share-btn");
+
+shareBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(window.location.href);
+  alert("RubiTube link copied!");
+});
