@@ -134,3 +134,19 @@ padding:20px;
 width:100%;
 border-radius:10px;
 }
+.search-page{
+text-align:center;
+color:white;
+padding-top:50px;
+}
+
+.search-page input{
+width:80%;
+padding:10px;
+border:none;
+border-radius:10px;
+}
+
+.search-results{
+margin-top:20px;
+}
