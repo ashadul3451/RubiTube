@@ -35,8 +35,8 @@ shareBtn.addEventListener("click", () => {
 });
 const videos = [
   "video.mp4",
-  video2.mp4
-  video3.mp4
+  "video2.mp4",
+  "video3.mp4"
 ];
 
 let currentVideo = 0;
