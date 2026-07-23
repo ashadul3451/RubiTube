@@ -53,3 +53,16 @@ function nextVideo() {
   video.load();
   video.play();
 }
+let startY = 0;
+
+document.addEventListener("touchstart", (e) => {
+  startY = e.touches[0].clientY;
+});
+
+document.addEventListener("touchend", (e) => {
+  let endY = e.changedTouches[0].clientY;
+
+  if (startY - endY > 50) {
+    nextVideo();
+  }
+});
