@@ -73,17 +73,19 @@ width:180px;
 border:none;
 border-radius:8px;
 }
+
 .logo{
 position:absolute;
-top:20px;
+top:15px;
 left:50%;
 transform:translateX(-50%);
-color:white;
 font-size:28px;
 font-weight:bold;
-z-index:999;
-text-shadow:0 0 10px rgba(0,0,0,0.8);
+color:white;
+z-index:9999;
+text-shadow:0 0 15px rgba(0,0,0,0.8);
 }
+
 #comments{
 max-height:120px;
 overflow-y:auto;
@@ -91,6 +93,7 @@ overflow-y:auto;
 .follow-btn{
 background:#ff0050 !important;
   }
+
 .navbar{
 position:fixed;
 bottom:0;
