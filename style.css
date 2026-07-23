@@ -166,3 +166,23 @@ padding:12px;
 border-radius:10px;
 margin:10px 0;
 }
+.profile-banner{
+height:120px;
+background:linear-gradient(45deg,#ff0050,#00f2ea);
+border-radius:0 0 20px 20px;
+margin-bottom:20px;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:25px;
+margin:20px 0;
+color:white;
+}
+
+.stats div{
+background:rgba(255,255,255,0.1);
+padding:10px 15px;
+border-radius:10px;
+}
