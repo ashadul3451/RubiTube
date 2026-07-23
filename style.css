@@ -186,3 +186,23 @@ background:rgba(255,255,255,0.1);
 padding:10px 15px;
 border-radius:10px;
 }
+.login-page{
+text-align:center;
+padding-top:120px;
+color:white;
+}
+
+.login-page input{
+width:250px;
+padding:10px;
+border:none;
+border-radius:10px;
+}
+
+.login-page button{
+padding:10px 30px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+  }
