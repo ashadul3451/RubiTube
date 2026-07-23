@@ -52,3 +52,14 @@ width:180px;
 .comment-box input{
 padding:5px;
 }
+.video-btn{
+position:absolute;
+top:20px;
+left:20px;
+padding:10px 15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+z-index:999;
+}
