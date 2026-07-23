@@ -66,3 +66,24 @@ document.addEventListener("touchend", (e) => {
     nextVideo();
   }
 });
+const video = document.getElementById("videoPlayer");
+
+video.addEventListener("dblclick", () => {
+  likes++;
+  likeCount.innerText = likes;
+
+  const heart = document.createElement("div");
+  heart.innerHTML = "❤️";
+  heart.style.position = "absolute";
+  heart.style.top = "50%";
+  heart.style.left = "50%";
+  heart.style.fontSize = "60px";
+  heart.style.transform = "translate(-50%,-50%)";
+  heart.style.zIndex = "9999";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 800);
+});
