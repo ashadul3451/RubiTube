@@ -46,9 +46,9 @@ cursor:pointer;
 z-index:999;
 }
 .right-menu div{
-margin:20px 0;
-background:rgba(0,0,0,0.4);
-padding:8px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(8px);
+padding:10px;
 border-radius:15px;
 }
 
@@ -84,3 +84,10 @@ font-weight:bold;
 z-index:999;
 text-shadow:0 0 10px rgba(0,0,0,0.8);
 }
+#comments{
+max-height:120px;
+overflow-y:auto;
+}
+.follow-btn{
+background:#ff0050 !important;
+  }
