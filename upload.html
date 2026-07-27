@@ -37,6 +37,21 @@
   <div onclick="location.href='notification.html'">🔔<br>Alerts</div>
   <div onclick="location.href='profile.html'">👤<br>Profile</div>
 </div>
+<script>
+const videoInput = document.querySelector('input[type="file"]');
+const previewVideo = document.getElementById('previewVideo');
+
+videoInput.addEventListener('change', function() {
+  const file = this.files[0];
+
+  if(file){
+    const url = URL.createObjectURL(file);
+
+    previewVideo.src = url;
+    previewVideo.style.display = "block";
+  }
+});
+</script>
 
 </body>
 </html>
