@@ -244,3 +244,9 @@ padding:10px;
 border:none;
 border-radius:10px;
 }
+
+#previewVideo{
+margin-top:15px;
+border-radius:10px;
+max-width:90%;
+}
