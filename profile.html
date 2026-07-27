@@ -59,6 +59,13 @@ imageInput.addEventListener("change", function() {
     reader.readAsDataURL(file);
   }
 });
+function editProfile() {
+  let newName = prompt("Enter new username:");
+
+  if(newName && newName.trim() !== "") {
+    document.getElementById("username").innerText = "@" + newName;
+  }
+}
 </script>
   
 </body>
