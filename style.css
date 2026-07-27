@@ -206,3 +206,25 @@ border-radius:10px;
 cursor:pointer;
 font-size:16px;
   }
+.upload-page{
+text-align:center;
+padding-top:100px;
+color:white;
+}
+
+.upload-page input{
+padding:10px;
+background:white;
+border-radius:10px;
+}
+
+.upload-page button{
+margin-top:15px;
+padding:12px 25px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+background:#ff0050;
+color:white;
+}
