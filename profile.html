@@ -73,6 +73,12 @@ document.getElementById("logoutBtn").addEventListener("click", () => {
   window.location.href = "login.html";
 });
 
+const savedEmail = localStorage.getItem("userEmail");
+
+if(savedEmail){
+  document.getElementById("userEmail").innerText = "👤 " + savedEmail;
+}
+
 </script>
   
 </body>
