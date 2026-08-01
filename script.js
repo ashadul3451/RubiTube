@@ -74,12 +74,7 @@ video.addEventListener("dblclick", () => {
 
   const heart = document.createElement("div");
   heart.innerHTML = "❤️";
-  heart.style.position = "absolute";
-  heart.style.top = "50%";
-  heart.style.left = "50%";
-  heart.style.fontSize = "60px";
-  heart.style.transform = "translate(-50%,-50%)";
-  heart.style.zIndex = "9999";
+  heart.classList.add("heart-pop");
 
   document.body.appendChild(heart);
 
