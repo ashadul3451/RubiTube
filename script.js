@@ -68,17 +68,26 @@ document.addEventListener("touchend", (e) => {
 });
 const video = document.getElementById("videoPlayer");
 
-video.addEventListener("dblclick", () => {
-  likes++;
-  likeCount.innerText = likes;
+let lastTap = 0;
 
-  const heart = document.createElement("div");
-  heart.innerHTML = "❤️";
-  heart.classList.add("heart-pop");
+video.addEventListener("touchend", () => {
+  const currentTime = new Date().getTime();
+  const tapLength = currentTime - lastTap;
 
-  document.body.appendChild(heart);
+  if (tapLength < 300 && tapLength > 0) {
+    likes++;
+    likeCount.innerText = likes;
 
-  setTimeout(() => {
-    heart.remove();
-  }, 800);
+    const heart = document.createElement("div");
+    heart.innerHTML = "❤️";
+    heart.classList.add("heart-pop");
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 800);
+  }
+
+  lastTap = currentTime;
 });
