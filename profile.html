@@ -43,11 +43,6 @@ style="border-radius:50%;">
 </div>
 </div>
   
-document.getElementById("logoutBtn").addEventListener("click", () => {
-  alert("Logged Out!");
-  window.location.href = "login.html";
-});
-
 <script>
 const imageInput = document.getElementById("imageInput");
 const profilePic = document.getElementById("profilePic");
@@ -72,6 +67,11 @@ function editProfile() {
     document.getElementById("username").innerText = "@" + newName;
   }
 }
+document.getElementById("logoutBtn").addEventListener("click", () => {
+  alert("Logged Out!");
+  window.location.href = "login.html";
+});
+
 </script>
   
 </body>
