@@ -20,6 +20,7 @@ document.getElementById("loginBtn").addEventListener("click", () => {
   signInWithEmailAndPassword(auth, email, password)
     .then(() => {
       alert("Login Success!");
+      localStorage.setItem("userEmail", email);
       window.location.href = "index.html";
     })
     .catch((error) => {
