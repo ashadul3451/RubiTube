@@ -69,8 +69,8 @@ function editProfile() {
 }
 
 document.getElementById("logoutBtn").addEventListener("click", () => {
-  alert("Logged Out!");
   localStorage.removeItem("userEmail");
+  alert("Logged Out!");
   window.location.href = "login.html";
 });
 
