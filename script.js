@@ -91,3 +91,9 @@ video.addEventListener("touchend", () => {
 
   lastTap = currentTime;
 });
+
+const video = document.getElementById("videoPlayer");
+
+video.addEventListener("click", () => {
+  alert("Video clicked");
+});
