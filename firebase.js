@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyArOr4ef6mLGvA4uINejFNfjyejNo4DcwI",
   authDomain: "rubitube.firebaseapp.com",
   projectId: "rubitube",
   storageBucket: "rubitube.firebasestorage.app",
